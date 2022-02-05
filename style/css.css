@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 400;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.proud-of-this-css {
+    color: papayawhip;
+}
+body {
+    background-color: #211A29;
+}
+main {
+    opacity: 10%;
+}
+#backimg {
+    position: absolute;
+    width: 100%;
+}
+#titulo {
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 15%;
+    font-size: 20px;
+    font-family: 'Red Hat Text', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+#montanha {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(35, 28, 43);
+}
+.horas {
+    position: absolute;
+    top: 30%;
+    color: hsl(345, 95%, 68%);
+    width: 120px;
+    height: 120px;
+    font-size: 60px;
+    right: 0;
+    border-radius: 10px;
+    background-color: hsl(236, 21%, 26%);
+    box-shadow: 0px -10px hsl(234, 17%, 12%) inset;
+}
+#hr1{
+    left: 50%;
+    transform: translateX(-237.5%);
+}
+#hr2{
+    left: 50%;
+    transform: translateX(-112.5%);
+}
+#hr3{
+    left: 50%;
+    transform: translateX(+12.5%);
+}
+#hr4{
+    left: 50%;
+    transform: translateX(+137.5%);
+}
+.horas p {
+    position: inherit;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline;
+    font-weight: 700;
+    font-family: 'Red Hat Text';
+}
+
+.info {
+    position: inherit;
+    font-weight: 700;
+    color: hsl(237, 18%, 59%);
+    font-size: 14px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.divinfo {
+    width: 120px;
+    position: absolute;
+    top: 51%;
+}
+#container1{
+    left: 50%;
+    transform: translateX(-237.5%);
+}
+#container2{
+    left: 50%;
+    transform: translateX(-112.5%);
+}
+#container3{
+    left: 50%;
+    transform: translateX(+12.5%);
+}
+#container4{
+    left: 50%;
+    transform: translateX(+137.5%);
+}
+#creditos {
+    position: absolute;
+    top: 95%;
+    display: inline;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+}
+#formulario {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    align-items: center;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+#formulario label {
+    display: inline;
+    color: white;
+    font-weight: bold;
+}
+#formulario input {
+    color: black;
+    font-weight: bold;
+    width: 50px;
+    margin-bottom: 30px;
+}
+#enviar {
+    width: 100px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+</head>
+<body>
+  <img id="backimg" alt="backgound" src="images/bg-stars.svg">
+  <main id="corpo">
+    <p id="titulo">We're launching soon</p>
+    <div id="hr1" class="horas" onclick="rodar()"> <p class="valor"> 08 </p> </div>
+    <div id="hr2" class="horas"> <p class="valor"> 23 </p> </div>
+    <div id="hr3" class="horas"> <p class="valor"> 55 </p> </div>
+    <div id="hr4" class="horas"> <p class="valor"> 41 </p> </div>
+    
+    <div class="divinfo" id="container1"> <p id="ph1" class="info">Days</p>    </div>
+    <div class="divinfo" id="container2"> <p id="ph2" class="info">Hours</p>   </div>
+    <div class="divinfo" id="container3"> <p id="ph3" class="info">Minutes</p> </div>
+    <div class="divinfo" id="container4"> <p id="ph4" class="info">Seconds</p> </div>
+  </main>
+  <form id="formulario"> 
+    <label for="entradadia"> Dias: </label>
+    <input type="number" class="inputs" id="entradadia" min="0" max="99">
+
+    <label for="entradahora"> Horas: </label>
+    <input type="number" class="inputs" id="entradahora" min="0" max="60">
+
+    <label for="entradaminuto"> Minutos: </label>
+    <input type="number" class="inputs" id="entradaminuto" min="0" max="60">
+
+    <label for="entradasegundo"> Segundos: </label>
+    <input type="number" class="inputs" id="entradasegundo" min="0" max="60">
+
+    <input type="button" class="inputs" value="Start" id="enviar" onclick="letsGo()">
+  </form>
+  <footer class="attribution">
+    <img id="montanha" alt="designer" src="images/pattern-hills.svg">
+    <div id="creditos">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="github.com/Alves-Andre">André Alves</a>.</div>
+  </footer>
+  <script type="text/javascript" src="scripts/js.js" defer></script>
+</body>
+</html>
