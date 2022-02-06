@@ -27,19 +27,15 @@ function startTimer(duration, display){
 }
 function letsGo(){
     if (document.getElementById("entradadia").value == ''){
-        alert('Digite o numero de dias');
         return null;
     }
     else if (document.getElementById("entradahora").value == ''){
-        alert('Digite o número de horas');
         return null;
     }
     else if (document.getElementById("entradaminuto").value == ''){
-        alert('Digite o número de minutos');
         return null;
     }
     else if (document.getElementById("entradasegundo").value == ''){
-        alert('Digite o número de segundos');
         return null;
     }
     var segundos = parseInt(document.getElementById("entradasegundo").value);
@@ -60,28 +56,3 @@ function rudini(){
     document.getElementById("formulario").style.opacity = '0%';
     document.getElementById("corpo").style.opacity = '100%';
 }
-
-/*
-alert("1231");
-function rodartemporizador(display, tempo) {
-    var minutos = parseInt(tempo/60);
-    alert("ola"+minutos);
-    var timer = tempo, segundos, minutos;
-    setInterval(function (){
-        minutos = parseInt(tempo % 60);
-        segundos = parseInt()
-        tempo= tempo < 0 ? '0'+tempo : tempo;
-        minutos = minutos < 0 ? '0'+tempo : tempo;
-        display.textContent = segundos;
-        display[3].innerHTML = minutos;
-        if (--timer < 0){
-            timer = tempo;
-        }
-    },1000);
-}
-
-window.onload = function(){
-    var timer = 100;
-    var display = document.getElementsByClassName("hr1");
-    rodartemporizador(display,timer);
-}*/
