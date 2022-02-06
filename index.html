@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style/css.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +17,7 @@
     rel="stylesheet">
 
   <title>Frontend Mentor | Launch countdown timer</title>
-
+  <img alt="config" id="config" src="images/icon-gear.svg" onclick="aparecer()">
 </head>
 
 <body>
@@ -52,6 +51,8 @@
     </div>
   </main>
   <form id="formulario">
+    <img id="icon_close" alt="icon close" src="images/icon-close.svg" onclick="rudini()">
+
     <label for="entradadia"> DAYS: </label>
     <input type="number" class="inputs" id="entradadia" min="0" max="99" required>
 

@@ -140,10 +140,15 @@ main {
     position: absolute;
     top: 95%;
     display: inline;
-    color: white;
+    color: hsl(237, 18%, 59%);
     left: 50%;
     transform: translate(-50%);
     font-size: 14px;
+    font-weight: bold;
+}
+#creditos a {
+    color: hsl(237, 35%, 50%);
+    font-weight: bold;
 }
 
 #formulario {
@@ -230,6 +235,26 @@ input[type=number]::-webkit-inner-spin-button{
     justify-content: flex;
 }
 .redes:hover{
-    color: hsl(345, 95%, 68%);
+    filter: invert(58%) sepia(38%) saturate(4955%) hue-rotate(310deg) brightness(101%) contrast(102%);
+}
+#icon_close {
+    position: inherit;
+    right: 10px;
+    top: 10px;
+}
+#icon_close:hover {
+    filter: invert(58%) sepia(38%) saturate(4955%) hue-rotate(310deg) brightness(101%) contrast(102%);
+}
+#enviar:hover {
+    color: hsl(234, 17%, 12%);
+    background-color: hsl(345, 95%, 68%);
+}
+#config {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 10;
+}
+#config:hover {
     filter: invert(58%) sepia(38%) saturate(4955%) hue-rotate(310deg) brightness(101%) contrast(102%);
 }

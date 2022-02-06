@@ -1,16 +1,15 @@
+var myinterval;
 function startTimer(duration, display){
-    var timer = duration, minutos, segundos;
+    var timer = duration;
     var resto, resto1;
-
-    setInterval(function (){
+    myinterval = setInterval(function (){
         dias = parseInt(timer/86400);
         resto = parseInt(timer%86400);
         horas = parseInt(resto/3600);
         resto1 = parseInt(resto%3600);
         minutos = parseInt(resto1/ 60);
         segundos = parseInt(resto1 % 60);
-        //alert(timer +' '+dias +' '+horas + ' '+ minutos+ ' '+segundos);
-        	
+ 	
         dias = dias < 10 ? '0'+dias : dias;
         horas = horas < 10 ? '0'+horas : horas;
         minutos = minutos < 10 ? '0'+minutos : minutos;
@@ -45,6 +44,7 @@ function letsGo(){
     var total = parseInt(segundos + minutos*60 + horas*3600 + dias*86400);
     var display = document.getElementsByClassName("valor");
     rudini();
+    clearInterval(myinterval);
     startTimer(total, display);
 };
 function rudini(){
@@ -55,4 +55,13 @@ function rudini(){
     document.getElementsByClassName("inputs")[4].disabled = true;
     document.getElementById("formulario").style.opacity = '0%';
     document.getElementById("corpo").style.opacity = '100%';
+}
+function aparecer(){
+    document.getElementsByClassName("inputs")[0].disabled = false;
+    document.getElementsByClassName("inputs")[1].disabled = false;
+    document.getElementsByClassName("inputs")[2].disabled = false;
+    document.getElementsByClassName("inputs")[3].disabled = false;
+    document.getElementsByClassName("inputs")[4].disabled = false;
+    document.getElementById("formulario").style.opacity = '100%';
+    document.getElementById("corpo").style.opacity = '5%';
 }
